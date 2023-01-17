@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio/cronômetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="general">
+        <div class="upper-btns">
+            <button class="btn main" onclick="swapClock()">Clock</button>
+            <button class="btn main" onclick="swapTimer()">Timer</button>
+        </div>
+        <div class="display">
+            <div class="clock">
+                <span class="hour"></span>
+                <p>:</p>
+                <span class="minutes"></span>
+                <p></p>
+                <span class="seconds"></span>
+            </div>
+            <div class="timer hide"></div>
+            <div class="date">
+                <p class="days"></p>
+                <p>/</p>
+                <p class="month"></p>
+                <p>/</p>
+                <p class="year"></p>
+            </div>
+            <div class="splitLine"></div>
+            <div class="week-day">
+                <p></p>
+            </div>
+        </div>
+        <div class="bottom-btns">
+            <button class="btn play hide" onclick="play()">Play</button>
+            <button class="btn pause hide" onclick="pause()">Pause</button>
+            <button class="btn reset hide" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <script src="./cronometro.js"></script>
+</body>
+</html>
